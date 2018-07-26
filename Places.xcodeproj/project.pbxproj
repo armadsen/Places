@@ -11,6 +11,8 @@
 		9D51FD6A210A2E5700B55B78 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51FD69210A2E5600B55B78 /* PlacesTableViewController.swift */; };
 		9D51FD6C210A2E7500B55B78 /* CreateNewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51FD6B210A2E7500B55B78 /* CreateNewPlaceViewController.swift */; };
 		9D51FD6E210A32BE00B55B78 /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D51FD6D210A32BE00B55B78 /* PlacesTable.storyboard */; };
+		9D51FD70210A3AF700B55B78 /* PlacesTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51FD6F210A3AF700B55B78 /* PlacesTabBarViewController.swift */; };
+		9D51FD72210A3BB900B55B78 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51FD71210A3BB900B55B78 /* PlacesPresenter.swift */; };
 		9DA1A8E3210A2A3E0017C410 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1A8E2210A2A3E0017C410 /* Place.swift */; };
 		9DA1A8E6210A2AEB0017C410 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA1A8E5210A2AEB0017C410 /* PlaceController.swift */; };
 		9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8C28B210A1DAE00A4B391 /* AppDelegate.swift */; };
@@ -26,6 +28,8 @@
 		9D51FD69210A2E5600B55B78 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		9D51FD6B210A2E7500B55B78 /* CreateNewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPlaceViewController.swift; sourceTree = "<group>"; };
 		9D51FD6D210A32BE00B55B78 /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
+		9D51FD6F210A3AF700B55B78 /* PlacesTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTabBarViewController.swift; sourceTree = "<group>"; };
+		9D51FD71210A3BB900B55B78 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 		9DA1A8E2210A2A3E0017C410 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		9DA1A8E5210A2AEB0017C410 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 		9DC8C288210A1DAE00A4B391 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9DC8C28B210A1DAE00A4B391 /* AppDelegate.swift */,
+				9D51FD71210A3BB900B55B78 /* PlacesPresenter.swift */,
 				9DA1A8E4210A2ACC0017C410 /* Models */,
 				9DA1A8E8210A2AF40017C410 /* Model Controllers */,
 				9DC8C2A7210A1F5000A4B391 /* View Controllers */,
@@ -121,6 +126,7 @@
 				9D51FD67210A2E3800B55B78 /* VisitedPlacesViewController.swift */,
 				9D51FD69210A2E5600B55B78 /* PlacesTableViewController.swift */,
 				9D51FD6B210A2E7500B55B78 /* CreateNewPlaceViewController.swift */,
+				9D51FD6F210A3AF700B55B78 /* PlacesTabBarViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -199,9 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA1A8E3210A2A3E0017C410 /* Place.swift in Sources */,
+				9D51FD72210A3BB900B55B78 /* PlacesPresenter.swift in Sources */,
 				9DA1A8E6210A2AEB0017C410 /* PlaceController.swift in Sources */,
 				9DC8C28C210A1DAE00A4B391 /* AppDelegate.swift in Sources */,
 				9DC8C2AD210A1F9F00A4B391 /* MapViewController.swift in Sources */,
+				9D51FD70210A3AF700B55B78 /* PlacesTabBarViewController.swift in Sources */,
 				9D51FD68210A2E3800B55B78 /* VisitedPlacesViewController.swift in Sources */,
 				9D51FD6C210A2E7500B55B78 /* CreateNewPlaceViewController.swift in Sources */,
 				9D51FD6A210A2E5700B55B78 /* PlacesTableViewController.swift in Sources */,

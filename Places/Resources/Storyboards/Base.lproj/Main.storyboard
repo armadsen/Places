@@ -17,10 +17,52 @@
                     <view key="view" contentMode="scaleToFill" id="RMq-qX-Qgj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CpU-ub-tXo">
+                                <rect key="frame" x="0.0" y="258.5" width="375" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="stk-rq-IIu">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude from -90 to 90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1d-FX-bmK">
+                                        <rect key="frame" x="0.0" y="40" width="375" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Longitude from -180 to 180" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="77w-MV-I8n">
+                                        <rect key="frame" x="0.0" y="80" width="375" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-Pf-NZS">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="30"/>
+                                        <state key="normal" title="Save Place"/>
+                                        <connections>
+                                            <action selector="createNewPlace:" destination="4yW-Ll-ukg" eventType="touchUpInside" id="oMo-lX-qqC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CpU-ub-tXo" firstAttribute="leading" secondItem="7t3-FT-oRT" secondAttribute="leading" id="KpV-Qh-xbs"/>
+                            <constraint firstItem="7t3-FT-oRT" firstAttribute="trailing" secondItem="CpU-ub-tXo" secondAttribute="trailing" id="xEB-xU-rsr"/>
+                            <constraint firstItem="CpU-ub-tXo" firstAttribute="centerY" secondItem="RMq-qX-Qgj" secondAttribute="centerY" id="zVe-gr-tER"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7t3-FT-oRT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create Place" image="Plus" id="F3b-SJ-IRI"/>
+                    <connections>
+                        <outlet property="latitudeTextField" destination="n1d-FX-bmK" id="H1j-Cg-ttl"/>
+                        <outlet property="longitudeTextField" destination="77w-MV-I8n" id="O3h-um-Yjx"/>
+                        <outlet property="nameTextField" destination="stk-rq-IIu" id="qwR-dS-eyd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Q7-u2-EZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="328.80000000000001" y="-117.39130434782609"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Places Tab Bar View Controller-->
         <scene sceneID="VNi-a2-6mS">
             <objects>
-                <tabBarController id="SYr-Mi-WbP" sceneMemberID="viewController">
+                <tabBarController id="SYr-Mi-WbP" customClass="PlacesTabBarViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DYw-gI-khQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
